@@ -1,0 +1,32 @@
+﻿ @model DapperApp.Dtos.UpdateProjectDto
+@{
+    Layout = null;
+}
+
+<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+
+<div class="container">
+    <form method="post">
+        <br /><br />
+        <label>Project ID</label>
+        <input type="text" asp-for="ProjectID" class="form-control" />
+        <br />
+        <label>Proje Adı</label>
+        <input type="text" asp-for="Title" class="form-control" />
+        <br />
+        <label>Proje Fiyatı</label>
+        <input type="text" asp-for="Price" class="form-control" />
+        <br />
+        <label>Proje Tamamlanma Süresi</label>
+        <input type="text" asp-for="CompleteDay" class="form-control" />
+        <br />
+        <label>Proje Açıklaması</label>
+        <input type="text" asp-for="Description" class="form-control" />
+        <br />
+        <label>Proje Kategorisi</label>
+        <input type="text" asp-for="ProjectCategory" class="form-control" />
+        <br />
+        <button class="btn btn-success">Kaydet</button>
+    </form>
+</div>
